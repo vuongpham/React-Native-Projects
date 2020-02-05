@@ -8,6 +8,7 @@ import {name as appName} from './app.json';
 import FirstScreen from './components/FirstScreen';
 import Robot from './components/Robot';
 import MultipleGreetings from './components/MultipleGreetings';
+import TextBlink from './components/TextBlink';
 
 
-AppRegistry.registerComponent(appName, () => MultipleGreetings);
+AppRegistry.registerComponent(appName, () => TextBlink);
