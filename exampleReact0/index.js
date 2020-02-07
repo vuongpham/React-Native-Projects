@@ -12,8 +12,8 @@ import MultipleGreetings from './components/MultipleGreetings';
 import TextBlink from './components/TextBlink';
 import FlexDimension from './components/FlexDimension';
 import LoginScreen from './components/LoginScreen';
-
-
+import Touchable from './components/Touchable';
+import BasicFlatList from './components/list/BasicFlatList';
 
 // export default class App extends Component {
 //   render() {
@@ -43,4 +43,4 @@ import LoginScreen from './components/LoginScreen';
 
 
 
-AppRegistry.registerComponent(appName, () => LoginScreen);
+AppRegistry.registerComponent(appName, () => BasicFlatList);
