@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { Text, View, FlatList, StyleSheet, Image, Alert } from 'react-native';
 import  flatListData from './flatListData';
 import Swipeout from 'react-native-swipeout';
+import { getFoodsFromServer } from '../networking/Server'
+
 
 class FlatListItem extends Component {
 

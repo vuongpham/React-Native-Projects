@@ -1,0 +1,29 @@
+import { ADD_NEW_TASK, TOGGLE_ONE_TASK } from '../action/actionTypes'
+
+const taskReducers = (tasks = [], action) => {
+  switch (action.type) {
+    case ADD_NEW_TASK:
+      return [
+      ...tasks,
+      {
+        taskId: action.taskId,
+        taskName: action.task.Name,
+        complete: false
+      }
+      ]
+
+    case TOGGLE_ONE_TASK:
+    return tasks.map(task =>
+    (task.taskId === action.taskId)
+    ? {...task, complete: !task.complete}
+    : task
+    )
+
+    default:
+      return tasks
+  }
+}
+
+export default taskReducers
+
+// I'm following video 37th of Nguyen Hoang Duc
